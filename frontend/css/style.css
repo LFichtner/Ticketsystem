@@ -1,0 +1,155 @@
+/**/
+body.BSnavbar { 
+    padding-top: 70px;
+};
+/*temp*/
+tbody tr:hover {
+    cursor: pointer;
+    background-color: #e3e3e3;
+}
+
+.error {
+    color: red;
+}
+
+.BSnavbar > div {
+    padding: 0 20px;
+}
+
+.navbar-nav .btn-create { 
+    margin: 4px 550px 0  0;
+    padding: 10px 35px;
+}
+
+
+.filter > input {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.filter > .newFilter {
+    margin-top: -5px;
+}
+
+#modal-ticketDetails .modal-footer > input {
+    margin: 0 5px;
+}
+
+#DataTables_Table_0_wrapper > .row:first-of-type {
+    display: none;
+}
+/**/
+
+/*.ticketView,
+.userView {
+    padding: 0 20px;
+}*/
+
+/*validation*/
+select.invalid,
+textarea.invalid,
+input.invalid {
+    border-color: #ff3333;
+}
+
+h4.invalid {
+    color: #ff3333;
+}
+/**/
+
+/* login page */
+.loginView {
+    padding: 0 20px;
+}
+
+.loginView button {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.loginView .btn-login {
+    float: right;
+}
+
+.loginView .errorMessage {
+    color: red;
+    margin-top: -30px;
+}
+
+.navbar .container-fluid {
+    background-color: #4d79ff;
+}
+
+.navbar-header .navbar-brand {
+    color: #000099;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: #000033;
+    cursor: pointer;
+    background-color: #1a53ff;
+}
+
+/* header */
+/* dropdown styling */
+/*collapsable menu*/
+.dropdown-li {
+    margin: 8px 18px 0 0;
+}
+.dropdown-menu {
+    border-radius: 2px;
+    margin: -1px 0 0;
+    padding: 0;
+    border-color: #e3e3e3;
+    min-width: 165px;
+}
+
+.dropdown-menu > li {
+    border-top: 1px double #e3e3e3;
+    padding: 5px 0;
+}
+
+.dropdown-menu > li:hover,
+.dropdown-menu > li > a:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/*button styling*/
+.dropdown-toggle {
+    padding: 6px 20px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #000000;    
+}
+
+/*button open and hover status*/
+.dropdown-toggle:hover,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover,
+.dropdown-toggle.btn-default:hover {
+    border: 1px solid #e3e3e3;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/*dropdown arrows*/
+.dropdown-toggle > .glyphicon-chevron-down,
+.dropdown-toggle > .glyphicon-chevron-up {
+    margin-left: 10px;
+}
+
+/* modal styles */
+
+/*pwd*/
+
+.modal-pwdforgotten .modal-footer buttton {
+    margin: 0 auto;
+}
+
+/*newTicket*/
+
+/*newUser*/

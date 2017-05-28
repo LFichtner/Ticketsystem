@@ -1,0 +1,24 @@
+.horizontal-align {
+    margin: 0 auto;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+    /* flex: 1; */
+    flex-grow: 1;
+}
+
+a:hover {
+    cursor: pointer;
+}

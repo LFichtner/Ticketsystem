@@ -1,0 +1,81 @@
+<div class="userView">
+    <div class="filter row">
+        <button class="btn btn-default">userPermission = true</button>
+        <button class="btn btn-default">userPermission = false</button>
+    </div>
+    <div class="row">
+        <table class="user table">
+            <thead>
+                <th>Username</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Permission</th>
+                <th>Mail-address</th>
+            </thead>
+            <tbody>
+                <div class="error" style="display: none;"></div>
+<!--                <tr>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- newUser-modal -->
+    <div id="modal-newUser" data-backdrop="static" data-keyboard="false" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                    <input type="text" class="ticketTitle-input" style="display: none;">
+                    <h4 class="error"></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Username:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="userName form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Name:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="userLastName form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">First name:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="userFirstName form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Mail-address:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="userMail form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Permission:</label>
+                            <div class="col-sm-8">
+                                <input type="checkbox" class="userPermission form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-danger btn-close" value="Cancel">
+                    <input type="button" class="btn btn-primary btn-save" value="Save">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+

@@ -1,0 +1,67 @@
+<!-- newTicket-modal -->
+<div id="modal-newTicket" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Create new Ticket</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Projekt:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="project form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Processtyp:</label>
+                        <div class="col-sm-8">
+                            <select class="typ">
+                                <option>Bug</option>
+                                <option>Feature</option>
+                                <option>Improvement</option>
+                                <option>Task</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Title:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="title form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Description:</label>
+                        <div class="col-sm-8">
+                            <textarea class="description form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Agent:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="agent form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Priority:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="priority form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Due-date:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="dueDate form-control">
+                            <span class="datepicker glyphicon glyphicon-calendar"></span>          <!-- datepicker -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Cancel</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

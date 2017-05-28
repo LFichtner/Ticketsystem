@@ -1,0 +1,121 @@
+<div class="ticketView">
+    <div class="errorMessage row" style="display: none;"></div>
+    <div class="successMessage row" style="display: none;"></div>
+    <div class="filter row">
+        <div class="error" style="display: none;"></div>
+<!--        <button class="btn btn-default">ticketProjekt = Bauer</button>
+        <button class="btn btn-default">ticketTyp = Bug</button>
+        <button class="btn btn-default">ticketUserName = lasse</button>
+        <button class="newFilter btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>-->
+    </div>
+    <div class="row">
+        <table class="tickets table">
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Priority</th>
+                <th>Due-Date</th>
+                <th>Projekt</th>
+                <th>User</th>
+                <th>In Progress</th>
+                <th>Created By</th>
+                <th>Creation Date</th>
+            </thead>
+            <tbody>
+                <div class="error" style="display: none;"></div>
+<!--                <tr>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                    <td>testData</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- ticket-modal -->
+    <div id="modal-ticketDetails" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title ticketTitle"></h4>
+                    <input type="text" class="ticketTitle-input" style="display: none;">
+                    <h4 class="error"></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Projekt:</label>
+                            <div class="col-sm-8">
+                                <select class="ticketProjekt form-control">
+                                    <option value="default" selected="selected">Select a Projekt</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Type:</label>
+                            <div class="col-sm-8">
+                                <select class="ticketType form-control">
+                                    <option value="default" selected="selected">Select a Type</option>
+    <!--                                <option>Bug</option>
+                                    <option>Feature</option>
+                                    <option>Improvement</option>
+                                    <option>Task</option>-->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Description:</label>
+                            <div class="col-sm-8">
+                                <textarea class="ticketDescription form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">User:</label>
+                            <div class="col-sm-8">
+                                <select class="ticketUser form-control">
+                                    <option value="default" selected="selected">Select a User</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Priority:</label>
+                            <div class="col-sm-8">
+                                <select class="ticketPriority form-control">
+                                    <option value="default" selected="selected">Select a Priority</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Due-date:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="ticketDueDate form-control">
+                                <!--<span class="datepicker glyphicon glyphicon-calendar"></span>           datepicker -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">In Progress:</label>
+                            <div class="col-sm-8">
+                                <input type="checkbox" class="ticketInProgress form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-danger btn-close" value="Cancel">
+                    <input type="button" class="btn btn-success btn-close" value="Archive">
+                    <input type="button" class="btn btn-warning btn-close" value="Remove">
+                    <input type="button" class="btn btn-primary btn-save" value="Save">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
